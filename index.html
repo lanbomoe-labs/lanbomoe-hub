@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LanBo-Moe | Moses Olanrewaju Bolarin</title>
+
+    <!-- SEO & Metadata -->
+    <meta name="description" content="LanBo-Moe — transforming lives through faith, creativity, and innovation. Home of 3niti Multimedia Academy, MWB Publishing, and global digital strategy." />
+    <meta name="keywords" content="LanBo-Moe, Moses Olanrewaju Bolarin, 3niti Multimedia Academy, digital transformation, AI training, multimedia education, publishing, global strategy, Nigeria" />
+
+    <!-- Favicon (using Imgur URL for reliability) -->
+    <link rel="shortcut icon" href="https://i.imgur.com/Fsp0AMe.png" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/Fsp0AMe.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="LanBo-Moe | Moses Olanrewaju Bolarin" />
+    <meta property="og:description" content="LanBo-Moe — transforming lives through faith, creativity, and innovation. Home of 3niti Multimedia Academy, MWB Publishing, and global digital strategy." />
+    <meta property="og:url" content="https://www.lanbomoe.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://i.imgur.com/Fsp0AMe.png" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LanBo-Moe | Moses Olanrewaju Bolarin" />
+    <meta name="twitter:description" content="LanBo-Moe — transforming lives through faith, creativity, and innovation." />
+    <meta name="twitter:image" content="https://i.imgur.com/Fsp0AMe.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        /* ===== CSS Reset & Variables ===== */
+        :root {
+            --purple: #800080;
+            --gold: #A68024;
+            --white: #FFFFFF;
+            --dark-bg: #1a001a;
+            --light-bg: #fdf6e3;
+            --font-h: 'Playfair Display', serif;
+            --font-p: 'Lato', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 85px;
+        }
+
+        body {
+            margin: 0;
+            padding: 85px 0 0 0;
+            font-family: var(--font-p);
+            background-color: var(--dark-bg);
+            color: var(--light-bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-h);
+            margin-top: 0;
+            font-weight: 600;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        /* Prevent clipping of images (no border-radius, no clip-path) */
+        img,
+        .visual-frame,
+        .hero-bg,
+        .card-image-wrap,
+        .card-image-wrap img,
+        .image-frame,
+        .image-frame img,
+        .pub-card img {
+            border-radius: 0 !important;
+            overflow: visible !important;
+            clip-path: none !important;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-pad {
+            padding: 6rem 0;
+        }
+
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .mb-5 { margin-bottom: 3rem; }
+        .mt-4 { margin-top: 2rem; }
+        .mt-5 { margin-top: 3rem; }
+        .pt-4 { padding-top: 2rem; }
+        .pt-5 { padding-top: 3rem; }
+        .pb-5 { padding-bottom: 3rem; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+
+        .bg-dark { background-color: var(--dark-bg); }
+        .bg-gradient { background: linear-gradient(135deg, var(--dark-bg) 0%, var(--purple) 100%); }
+        .bg-cream { background-color: var(--light-bg); color: var(--dark-bg); }
+
+        /* Typography */
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        .bg-cream .section-title {
+            color: var(--purple);
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 60px;
+            height: 3px;
+            background-color: var(--gold);
+        }
+        .bg-cream .section-title::after {
+            background-color: var(--gold);
+        }
+        .text-center .section-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Urgent Banner */
+        .urgent-banner {
+            background: linear-gradient(135deg, #cc0000, #ff3333);
+            color: var(--white);
+            padding: 1.25rem 2rem;
+            font-family: var(--font-h);
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 25px rgba(204, 0, 0, 0.4);
+            display: inline-block;
+            margin-bottom: 2.5rem;
+            border-left: 5px solid var(--gold);
+            border-right: 5px solid var(--gold);
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .global-impact-bar {
+            background: var(--gold);
+            color: var(--dark-bg);
+            text-align: center;
+            padding: 1.25rem;
+            font-family: var(--font-h);
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            border-bottom: 2px solid var(--purple);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            font-family: var(--font-p);
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: var(--gold);
+            color: var(--dark-bg);
+            border-color: var(--gold);
+            box-shadow: 0 4px 15px rgba(166, 128, 36, 0.4);
+        }
+        .btn-primary:hover {
+            background: transparent;
+            color: var(--gold);
+            box-shadow: 0 6px 20px rgba(166, 128, 36, 0.6);
+        }
+        .btn-outline {
+            background: transparent;
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        .btn-outline:hover {
+            background: var(--purple);
+            color: var(--white);
+            border-color: var(--purple);
+            box-shadow: 0 4px 15px rgba(128, 0, 128, 0.4);
+        }
+
+        .btn-main-nav {
+            background: var(--purple);
+            color: var(--white) !important;
+            border: 2px solid var(--purple);
+            box-shadow: 0 4px 15px rgba(128, 0, 128, 0.4);
+            padding: 16px 24px;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .btn-main-nav:hover {
+            background: var(--gold);
+            color: var(--white) !important;
+            border-color: var(--gold);
+            box-shadow: 0 6px 20px rgba(166, 128, 36, 0.6);
+        }
+
+        /* Header */
+        .header {
+            background: rgba(26, 0, 26, 0.98);
+            border-bottom: 1px solid rgba(166, 128, 36, 0.2);
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 300;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        .logo img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+        .main-nav {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-nav a {
+            font-family: var(--font-h);
+            color: var(--light-bg);
+            font-size: 1rem;
+            font-weight: 600;
+            position: relative;
+        }
+        .main-nav a:hover {
+            color: var(--gold);
+        }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            min-height: calc(100vh - 85px);
+            display: flex;
+            align-items: center;
+            padding: 4rem 0;
+        }
+        .hero-bg {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 1;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(26,0,26,0.9) 0%, rgba(128,0,128,0.8) 100%);
+            z-index: 2;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            animation: fadeInUp 1s ease forwards;
+        }
+        .hero-title {
+            font-size: 4.5rem;
+            color: var(--white);
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        .hero-title span {
+            background: linear-gradient(to right, var(--gold), #ffdf80);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--light-bg);
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        
+        .gse-banner {
+            background: var(--gold);
+            color: var(--dark-bg);
+            padding: 1rem 2rem;
+            font-family: var(--font-h);
+            font-size: 1.25rem;
+            font-weight: 700;
+            border-left: 5px solid var(--purple);
+            border-right: 5px solid var(--purple);
+            box-shadow: 0 10px 25px rgba(128,0,128,0.3);
+            display: inline-block;
+            animation: fadeInUp 1.2s ease forwards;
+        }
+
+        /* Ecosystem Grid */
+        .eco-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        .eco-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(166, 128, 36, 0.2);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+            text-align: center;
+            align-items: center;
+            height: 100%;
+        }
+        .eco-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(128,0,128,0.2);
+            background: rgba(128, 0, 128, 0.3);
+        }
+        .eco-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+        }
+        .eco-card h4 {
+            color: var(--gold);
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-h);
+        }
+        .eco-card p {
+            font-size: 0.9rem;
+            color: rgba(253, 246, 227, 0.85);
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        /* About & Legacy */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .image-frame {
+            padding: 1rem;
+            border: 1px solid var(--purple);
+            background: rgba(128,0,128,0.1);
+            position: relative;
+        }
+        .image-frame::before {
+            content: '';
+            position: absolute;
+            top: -15px; left: -15px; right: 15px; bottom: 15px;
+            border: 1px solid var(--gold);
+            z-index: -1;
+        }
+        .image-frame img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            object-position: center top;
+        }
+        .about-text {
+            display: flex;
+            flex-direction: column;
+        }
+        .about-lead {
+            font-size: 1.15rem;
+            color: rgba(253, 246, 227, 0.95);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        .founder-bio {
+            padding: 1.5rem;
+            background: rgba(166, 128, 36, 0.1);
+            border-left: 3px solid var(--gold);
+            margin-bottom: 2rem;
+        }
+        .founder-bio h3 {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .founder-bio p {
+            color: rgba(253, 246, 227, 0.9);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        .values-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .value-card {
+            background: rgba(128, 0, 128, 0.15);
+            border-left: 3px solid var(--gold);
+            padding: 1.25rem 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .value-card:hover {
+            transform: translateX(10px);
+            background: rgba(128, 0, 128, 0.25);
+        }
+        .value-heading {
+            color: var(--gold);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-h);
+            letter-spacing: 0.5px;
+        }
+        .value-card p {
+            font-size: 0.95rem;
+            margin: 0;
+            color: rgba(253, 246, 227, 0.85);
+        }
+
+        /* Programs & Hubs Grid */
+        .grid-programs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        @media (min-width: 992px) {
+            .grid-programs {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            }
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(166, 128, 36, 0.2);
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(128, 0, 128, 0.3);
+            border-color: var(--gold);
+        }
+        .card-image-wrap {
+            border: 1px solid rgba(128,0,128,0.3);
+            padding: 0.5rem;
+            background: rgba(26,0,26,0.5);
+            margin-bottom: 1.5rem;
+        }
+        .card-image-wrap img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            object-position: center;
+        }
+        .card h3 {
+            color: var(--white);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: rgba(253, 246, 227, 0.8);
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        /* Consulting */
+        .consulting-flex {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+        }
+        .consulting-content {
+            flex: 1;
+        }
+        .consulting-visual {
+            flex: 1;
+        }
+        .service-list {
+            margin-top: 2.5rem;
+        }
+        .service-item {
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+            border-left: 2px solid var(--purple);
+            position: relative;
+        }
+        .service-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            background: var(--gold);
+        }
+        .service-item h3 {
+            color: var(--gold);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .service-item p {
+            color: rgba(253, 246, 227, 0.85);
+            margin: 0;
+        }
+        .visual-frame {
+            width: 100%;
+            aspect-ratio: 4/5;
+            border: 2px solid var(--gold);
+            box-shadow: -20px 20px 0 rgba(128,0,128,0.3);
+            position: relative;
+        }
+        .visual-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Publishing */
+        .pub-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        @media (min-width: 992px) {
+            .pub-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        .pub-card {
+            background: var(--white);
+            padding: 1.5rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border: 1px solid rgba(166,128,36,0.3);
+            text-align: center;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            color: var(--dark-bg);
+            text-decoration: none;
+        }
+        .pub-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--purple);
+            box-shadow: 0 15px 30px rgba(128,0,128,0.15);
+            color: var(--dark-bg);
+        }
+        .pub-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            margin-bottom: 1.5rem;
+            border: none;
+            background: transparent;
+        }
+        .pub-card h4 {
+            font-size: 1.15rem;
+            color: var(--dark-bg);
+            margin: 0 0 0.5rem 0;
+            font-family: var(--font-h);
+            font-weight: 700;
+        }
+        .pub-card p {
+            font-size: 0.9rem;
+            color: #333333;
+            margin: 0;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+        .pub-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .pub-links a {
+            font-size: 0.75rem;
+            padding: 6px 12px;
+            border: 1px solid var(--purple);
+            color: var(--purple);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+        .pub-links a:hover {
+            background: var(--purple);
+            color: var(--white);
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .faq-item {
+            background: var(--white);
+            border: 1px solid rgba(166,128,36,0.3);
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .faq-item[open] {
+            border-color: var(--purple);
+            box-shadow: 0 10px 20px rgba(128,0,128,0.1);
+        }
+        .faq-item summary {
+            font-family: var(--font-h);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--dark-bg);
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-right: 2rem;
+        }
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-item summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+        .faq-item[open] summary::after {
+            content: '−';
+        }
+        .faq-content {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(166,128,36,0.2);
+            color: #333;
+        }
+        .faq-content strong {
+            color: var(--purple);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+        }
+
+        /* Reviews */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        @media (min-width: 992px) {
+            .review-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .review-card:last-child:nth-child(odd) {
+                grid-column: 1 / -1;
+            }
+        }
+        .review-card {
+            padding: 2.5rem;
+            border: 1px solid rgba(166,128,36,0.3);
+            background: rgba(26,0,26,0.5);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: border-color 0.3s ease;
+        }
+        .review-card:hover {
+            border-color: var(--gold);
+        }
+        .review-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--purple);
+        }
+        .compact-review {
+            padding: 1.5rem 2rem;
+        }
+        .compact-review .quote-text {
+            line-height: 1.3;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        .compact-review .quote-icon {
+            margin-bottom: 0.5rem;
+        }
+        .compact-review .quote-recognition {
+            margin-bottom: 0.5rem;
+        }
+        .quote-icon {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        .quote-recognition {
+            font-size: 0.85rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .quote-text {
+            font-style: italic;
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            color: rgba(253,246,227,0.9);
+            flex-grow: 1;
+        }
+        .quote-author {
+            font-weight: 700;
+            color: var(--gold);
+            font-family: var(--font-h);
+            font-size: 1.1rem;
+        }
+        .quote-role {
+            font-size: 0.85rem;
+            color: rgba(253, 246, 227, 0.7);
+            margin-top: 0.5rem;
+            line-height: 1.4;
+        }
+
+        /* Footer */
+        .footer {
+            background: #110011;
+            padding: 5rem 0 2rem;
+            border-top: 1px solid var(--purple);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        .footer-logo {
+            max-width: 220px;
+            margin-bottom: 1.5rem;
+        }
+        .footer h4 {
+            font-family: var(--font-h);
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        .footer p {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 1rem;
+            color: rgba(253,246,227,0.7);
+        }
+        .footer p i {
+            color: var(--purple);
+            margin-top: 5px;
+        }
+        .footer a {
+            color: inherit;
+        }
+        .footer a:hover {
+            color: var(--gold);
+        }
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(128,0,128,0.2);
+            border: 1px solid var(--purple);
+            color: var(--gold);
+            font-size: 1.2rem;
+        }
+        .social-links a:hover {
+            background: var(--gold);
+            color: var(--dark-bg);
+            border-color: var(--gold);
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            color: rgba(255,255,255,0.4);
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .about-grid, .consulting-flex {
+                grid-template-columns: 1fr;
+            }
+            .hero-title {
+                font-size: 3.5rem;
+            }
+            .visual-frame {
+                box-shadow: -10px 10px 0 rgba(128,0,128,0.3);
+            }
+        }
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+            }
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            .hero {
+                padding: 3rem 0;
+            }
+            .section-pad {
+                padding: 4rem 0;
+            }
+            body {
+                padding-top: 220px;
+            }
+            html {
+                scroll-padding-top: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="https://www.lanbomoe.com/" class="logo">
+                <img src="https://i.imgur.com/Fsp0AMe.png" alt="LanBo-Moe Logo" />
+            </a>
+            <nav class="main-nav">
+                <a href="#ecosystem">Ecosystem</a>
+                <a href="#about">About</a>
+                <a href="#programs">Programs</a>
+                <a href="#consulting">Consulting</a>
+                <a href="#publishing">Publishing</a>
+                <a href="#faq">FAQ</a>
+                <a href="#reviews">Reviews</a>
+                <a href="https://lanbomoe.github.io/#shop" target="_blank"><i class="fas fa-shopping-cart" style="margin-right: 5px;"></i>Shop</a>
+                <a href="https://lanbomoe.github.io/" target="_blank">More</a>
+            </nav>
+            <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3xX1rmUdxj9hTG1g4V9QECKqS6fj__8DnZuF1YT2O0tU92vEMIccgpOR2qZVFabymUzIlL8sh3" class="btn btn-primary" target="_blank">Book an Appointment</a>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero bg-dark" id="home">
+        <!-- Hero background image – if you don't have one, you can remove this div or keep it with a fallback color -->
+        <div class="hero-bg" style="background-image: url('assets/hero-background.jpg'); background-size: cover; background-position: center; background-color: #1a001a;"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Empowering the Next Generation of<br><span>Global Leaders</span></h1>
+            <p class="hero-subtitle">Your Gateway to the LanBo-Moe Ecosystem — Where Creativity Meets Technology, and Knowledge Transforms Lives.</p>
+            <div class="hero-actions">
+                <a href="https://3ma.lanbomoe.com/" class="btn-main-nav" target="_blank">3niti Multimedia Academy</a>
+                <a href="#mma" class="btn-main-nav">Majestic Multimedia Academy</a>
+                <a href="#mwb" class="btn-main-nav">Majestic World of Business Services</a>
+            </div>
+            <div class="gse-banner">
+                Coming Soon: GSE Hub – The Center for Global Strategic Entrepreneurship
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GLOBAL IMPACT BAR ===== -->
+    <div class="global-impact-bar">
+        <i class="fas fa-globe-africa" style="margin-right: 10px; color: var(--purple);"></i> 5,000+ People Trained Globally
+    </div>
+
+    <!-- ===== ECOSYSTEM ===== -->
+    <section class="ecosystem section-pad bg-gradient" id="ecosystem">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">The LanBo-Moe Ecosystem</h2>
+                <p class="mb-5" style="max-width: 800px; margin: 0 auto; color: var(--light-bg);">Explore the LanBo-Moe Ecosystem — Your Gateway to Transformation Through Faith, Creativity &amp; Innovation.</p>
+            </div>
+            
+            <div class="eco-grid">
+                <a href="https://3ma.lanbomoe.com/" target="_blank" class="eco-card">
+                    <div class="eco-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h4>🎓 3MA Academy</h4>
+                    <p>3niti Multimedia Academy — Multimedia, coding, digital skills training for ages 4-19</p>
+                </a>
+                <a href="https://mma.lanbomoe.com/" target="_blank" class="eco-card">
+                    <div class="eco-icon"><i class="fas fa-film"></i></div>
+                    <h4>🎬 MMA</h4>
+                    <p>Professional training platform for Ages 19 &amp; Above. Focus on Digital Marketing, AI Automation, and AVIS.</p>
+                </a>
+                <a href="https://mwb.lanbomoe.com/" target="_blank" class="eco-card">
+                    <div class="eco-icon"><i class="fas fa-book-open"></i></div>
+                    <h4>📚 MWB</h4>
+                    <p>Parent creative enterprise including MWB Publishing (Books/Printing) and MWB Productions (Music/Video).</p>
+                </a>
+                <a href="https://gse.lanbomoe.com/" target="_blank" class="eco-card">
+                    <div class="eco-icon"><i class="fas fa-globe-africa"></i></div>
+                    <h4>🌍 GSE Hub</h4>
+                    <p>Coming Soon — Global skills exchange platform</p>
+                </a>
+                <a href="https://cbt.lanbomoe.com/" target="_blank" class="eco-card">
+                    <div class="eco-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h4>💻 CBT Platform</h4>
+                    <p>Online assessments, quizzes, certification testing</p>
+                </a>
+                <a href="https://store.lanbomoe.com/" target="_blank" class="eco-card">
+                    <div class="eco-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h4>🛍️ Store</h4>
+                    <p>Books, courses, templates, digital resources</p>
+                </a>
+                <a href="https://avis.lanbomoe.com/" target="_blank" class="eco-card">
+                    <div class="eco-icon"><i class="fas fa-video"></i></div>
+                    <h4>🎥 AVIS</h4>
+                    <p>AI-powered video creation, automation, content production</p>
+                </a>
+                <a href="https://mobileuniversity.lanbomoe.com/" target="_blank" class="eco-card">
+                    <div class="eco-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h4>📱 Mobile University</h4>
+                    <p>All training under one roof — 3MA, MMA, AVIS, SMT, CBT</p>
+                </a>
+            </div>
+
+            <!-- SMT 2026 button added -->
+            <div class="mt-5 text-center" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://smt.lanbomoe.com/" target="_blank" class="btn btn-primary" style="min-width: 200px;">SMT 2026</a>
+                <a href="https://annualsmt.lanbomoe.com/" target="_blank" class="btn btn-outline" style="min-width: 200px;">SMT</a>
+                <a href="https://masterclass.lanbomoe.com/" target="_blank" class="btn btn-outline" style="min-width: 200px;">Global Systems Implementation Masterclass Executive Cohort</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about section-pad bg-dark" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="assets/MosesOlanrewajuBolarinPortrait.png" alt="Moses Olanrewaju Bolarin Portrait" />
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Purpose-Driven Impact</h2>
+                    <p class="about-lead">LanBo-Moe is a purpose-driven brand founded by Moses Olanrewaju Bolarin, dedicated to transforming lives through faith, creativity, innovation, and digital empowerment. Through multimedia education, AI and technology training, publishing, creative services, and mentorship, LanBo-Moe equips individuals, students, entrepreneurs, and organizations with the knowledge, skills, and inspiration needed to thrive in a rapidly changing world.</p>
+                    
+                    <div class="founder-bio">
+                        <h3>Moses Olanrewaju Bolarin | Founder &amp; System Architect</h3>
+                        <p>Moses Olanrewaju Bolarin (LanBo-Moe) is a digital transformation strategist, multimedia educator, and entrepreneur devoted to empowering Africa's future. Saved in 1986 while in high school, he has dedicated his life to ministry and entrepreneurship. With over 27 years of experience in brand, IT, multimedia, and global strategy, he has pioneered innovative initiatives in coding, digital literacy, and multimedia across Nigeria. He is a Christian minister, bestselling author of over 15 books, worship leader with 100+ songs, and founder of the LanBo-Moe ecosystem.</p>
+                    </div>
+                    
+                    <div class="values-list">
+                        <div class="value-card">
+                            <h4 class="value-heading">Kingdom Impact</h4>
+                            <p>Driving positive global change through faith-based principles, moral leadership, and purpose-driven initiatives.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4 class="value-heading">Innovation</h4>
+                            <p>Embracing AI and modern technology to pioneer fresh, future-ready solutions and stay ahead of the curve.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4 class="value-heading">Creativity</h4>
+                            <p>Blending African-inspired elegance with global aesthetics to craft compelling multimedia experiences.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4 class="value-heading">Excellence</h4>
+                            <p>Delivering premium, high-quality professional services across education, consulting, and publishing.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4 class="value-heading">Digital Empowerment</h4>
+                            <p>Equipping individuals and organizations with the essential technical and strategic skills needed to thrive globally.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3xX1rmUdxj9hTG1g4V9QECKqS6fj__8DnZuF1YT2O0tU92vEMIccgpOR2qZVFabymUzIlL8sh3" class="btn btn-outline" target="_blank">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROGRAMS ===== -->
+    <section class="programs section-pad bg-gradient" id="programs">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Training &amp; Empowerment</h2>
+                <p class="mb-5" style="max-width: 800px; margin-left: auto; margin-right: auto;">Equipping students, creators, and business professionals with future-ready technical skills, artificial intelligence mastery, and the creative vision required to lead in a digital-first world.</p>
+            </div>
+            
+            <div class="grid-programs">
+                <div class="card">
+                    <div class="card-image-wrap">
+                        <img src="assets/bk64YHlW37I6L0s2jQc_VI.png" alt="Summer Multimedia Training 2026" />
+                    </div>
+                    <h3>Summer Multimedia Training (SMT) 2026</h3>
+                    <p>An intensive annual summer program running from August 3-28, 2026, offering hands-on training in AI, coding, game design, robotics, and multimedia production.</p>
+                    <div class="mt-4" style="display: flex; gap: 10px; flex-direction: column;">
+                        <a href="https://smt.lanbomoe.com/" target="_blank" class="btn btn-outline" style="padding: 10px; font-size: 0.85rem; width: 100%;">SMT Hub</a>
+                        <a href="https://smt-2026-kids-teens-digital-transformation-challe.ai.studio/" target="_blank" class="btn btn-outline" style="padding: 10px; font-size: 0.85rem; width: 100%;">AI Studio Challenge</a>
+                        <a href="https://youtube.com/shorts/sLeSXcEDH_U?feature=share" target="_blank" class="btn btn-outline" style="padding: 10px; font-size: 0.85rem; width: 100%;"><i class="fab fa-youtube" style="margin-right: 5px;"></i> SMT 2026 Video Ad 1</a>
+                        <a href="https://youtube.com/shorts/7Z-QYKh0CeY?feature=share" target="_blank" class="btn btn-outline" style="padding: 10px; font-size: 0.85rem; width: 100%;"><i class="fab fa-youtube" style="margin-right: 5px;"></i> SMT 2026 Video Ad 2</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-image-wrap">
+                        <img src="assets/aF8s_ZKwnWN3LRWVKmJ4Xz.png" alt="Coding &amp; Digital Skills Development" />
+                    </div>
+                    <h3>Coding &amp; Digital Skills Development</h3>
+                    <p>Specialized training through 3niti Multimedia Academy equipping teens with technical expertise in programming, web development, and digital literacy.</p>
+                    <div class="mt-4">
+                        <a href="https://3ma.lanbomoe.com/" target="_blank" class="btn btn-outline" style="padding: 10px; font-size: 0.85rem; width: 100%;">Visit 3MA</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image-wrap">
+                        <img src="assets/96vzaysZRNE1_gg2LgmOBl.png" alt="Multimedia Production Training" />
+                    </div>
+                    <h3>Multimedia Production Training</h3>
+                    <p>Professional courses in graphic design, video editing, animation, and creative content production using industry-standard tools.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-image-wrap">
+                        <img src="assets/aosgDiNYx9ldwWcRbTB4cX.png" alt="AI Training &amp; Innovation" />
+                    </div>
+                    <h3>AI Training &amp; Innovation</h3>
+                    <p>Cutting-edge programs teaching artificial intelligence concepts, prompt engineering, and practical AI applications for business and creativity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONSULTING ===== -->
+    <section class="consulting section-pad bg-dark" id="consulting">
+        <div class="container">
+            <div class="consulting-flex">
+                <div class="consulting-content">
+                    <h2 class="section-title">Global Strategy &amp; Consulting</h2>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <h3>Brand Development &amp; Strategy</h3>
+                            <p>Customized branding solutions and global market positioning strategies for organizations seeking digital transformation and international reach.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>IT Solutions &amp; Digital Transformation</h3>
+                            <p>Professional technology services modernizing business operations through innovative digital tools, automation, and strategic implementation.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>Global Marketing &amp; Business Consulting</h3>
+                            <p>Expert advisory on international marketing trends, digital growth strategies, and business scaling for digital-driven ventures.</p>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3xX1rmUdxj9hTG1g4V9QECKqS6fj__8DnZuF1YT2O0tU92vEMIccgpOR2qZVFabymUzIlL8sh3" class="btn btn-outline" target="_blank">Book a Consultation</a>
+                    </div>
+                </div>
+                <div class="consulting-visual">
+                    <div class="visual-frame">
+                        <img src="assets/89Wh7G0ru7Tb9rDLK_w4xv.png" alt="Global Business Consulting" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MMA SECTION ===== -->
+    <section class="section-pad bg-gradient" id="mma">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">MMA (Majestic Multimedia Academy)</h2>
+                <p class="mb-5" style="font-size: 1.25rem; font-weight: bold; color: var(--light-bg);">Professional training platform for Ages 19 &amp; Above.</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="image-frame">
+                    <img src="assets/9S8oTD7e8X42_i109mo_gQ.png" alt="Professional Multimedia" />
+                </div>
+                <div class="about-text">
+                    <h3 style="color: var(--gold); font-size: 1.5rem; margin-bottom: 1.5rem;">Strategic Focus Areas</h3>
+                    <div class="service-list" style="margin-top: 0;">
+                        <div class="service-item">
+                            <h3>Digital Marketing</h3>
+                            <p>Mastering online positioning, performance marketing, and global brand visibility strategies.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>AI Automation</h3>
+                            <p>Streamlining business processes and scaling operations utilizing modern artificial intelligence architectures.</p>
+                        </div>
+                        <div class="service-item">
+                            <h3>AVIS (AI Video Income System)</h3>
+                            <p>Advanced, AI-powered video creation and content monetization frameworks designed for serious creators.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="founder-bio mt-4 text-left">
+                        <h3 style="color: var(--gold);">Featured Case Study</h3>
+                        <p>Showcasing MMA-grade production through the <strong>"A New You with Moses"</strong> podcast and the <strong>"Who Told You to Stop Dreaming?"</strong> video series.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MWB SECTION ===== -->
+    <section class="section-pad bg-dark" id="mwb">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">MWB (Majestic World of Business)</h2>
+                <p class="mb-5" style="font-size: 1.25rem; color: var(--light-bg);"><strong>The Parent Creative Enterprise</strong></p>
+            </div>
+            
+            <div class="grid-programs" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin-bottom: 4rem;">
+                <div class="card text-center" style="background: rgba(128, 0, 128, 0.1); border-color: var(--gold); align-items: center; justify-content: center;">
+                    <div class="eco-icon"><i class="fas fa-book"></i></div>
+                    <h3 style="color: var(--gold); font-size: 1.5rem;">MWB Publishing</h3>
+                    <p>Professional Books &amp; Printing services for Kingdom-focused authors and global leaders.</p>
+                </div>
+                <div class="card text-center" style="background: rgba(128, 0, 128, 0.1); border-color: var(--gold); align-items: center; justify-content: space-between;">
+                    <div class="eco-icon"><i class="fas fa-music"></i></div>
+                    <h3 style="color: var(--gold); font-size: 1.5rem;">MWB Productions</h3>
+                    <p>Music and Video production spanning world-class creative standards.</p>
+                    <div class="mt-3 w-100">
+                        <a href="https://lanbomoe.github.io/#music" class="btn btn-outline" style="font-size: 0.8rem; padding: 10px; width: 100%; box-sizing: border-box;" target="_blank">Explore Our 100+ Song Catalog on ReverbNation</a>
+                    </div>
+                </div>
+                <div class="card text-center" style="background: rgba(128, 0, 128, 0.1); border-color: var(--gold); align-items: center; justify-content: center;">
+                    <div class="eco-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 style="color: var(--gold); font-size: 1.5rem;">Strategy &amp; Consulting</h3>
+                    <p>Brand Development, IT Solutions, and International Business Consulting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PUBLISHING ===== -->
+    <section class="publishing section-pad bg-cream" id="publishing">
+        <div class="container">
+            <h2 class="section-title text-center" style="display: block;">MWB Publishing Hub</h2>
+            <p class="text-center mb-5" style="max-width: 800px; margin: 0 auto;">A premium service providing insightful literature, global business knowledge, and professional publishing support for Kingdom-focused authors and creators.</p>
+            
+            <div class="pub-grid">
+                <div class="pub-card">
+                    <img src="assets/9zg37Q2BCZ-30gDxBMYkZx.png" alt="Mysteries of the Kingdom Book Cover" />
+                    <h4>Mysteries of the Kingdom</h4>
+                    <p>Transformative spiritual insights for victorious living</p>
+                    <div class="pub-links">
+                        <a href="https://www.amazon.com/s?k=Mysteries+of+the+Kingdom+Moses+Olanrewaju+Bolarin" target="_blank">Amazon</a>
+                        <a href="https://www.lulu.com/spotlight/lanbomoe" target="_blank">Lulu</a>
+                        <a href="https://paystack.shop/majestic-world-of-business-publishing" target="_blank">Paystack</a>
+                        <a href="https://app.budpay.com/pay/LanBoMoeOnlineStore" target="_blank">BudPay</a>
+                    </div>
+                </div>
+                <div class="pub-card">
+                    <img src="assets/8_ztnUzgQQ69L52PyUKOQx.png" alt="Destiny World Book Cover" />
+                    <h4>Destiny World</h4>
+                    <p>Discover your true path and purpose in life</p>
+                    <div class="pub-links">
+                        <a href="https://www.amazon.com/s?k=Destiny+World+Moses+Olanrewaju+Bolarin" target="_blank">Amazon</a>
+                        <a href="https://www.lulu.com/spotlight/lanbomoe" target="_blank">Lulu</a>
+                        <a href="https://paystack.shop/majestic-world-of-business-publishing" target="_blank">Paystack</a>
+                        <a href="https://app.budpay.com/pay/LanBoMoeOnlineStore" target="_blank">BudPay</a>
+                    </div>
+                </div>
+                <div class="pub-card">
+                    <img src="assets/bfLSH1ZCEFW2e3skoLDOo0.png" alt="Who Told You To Stop Dreaming? Book Cover" />
+                    <h4>Who Told You To Stop Dreaming?</h4>
+                    <p>Inspirational guidance for life's journey</p>
+                    <div class="pub-links">
+                        <a href="https://www.amazon.com/s?k=Who+Told+You+To+Stop+Dreaming+Moses+Olanrewaju+Bolarin" target="_blank">Amazon</a>
+                        <a href="https://www.lulu.com/spotlight/lanbomoe" target="_blank">Lulu</a>
+                        <a href="https://paystack.shop/majestic-world-of-business-publishing" target="_blank">Paystack</a>
+                        <a href="https://app.budpay.com/pay/LanBoMoeOnlineStore" target="_blank">BudPay</a>
+                    </div>
+                </div>
+                <div class="pub-card" style="border: 2px solid var(--purple);">
+                    <img src="assets/bAoeQxtW1m167zAAWiDkTK.png" alt="12 Simple Strategies to Becoming a Global Brand" />
+                    <h4>12 Simple Strategies to Becoming a Global Brand</h4>
+                    <p style="font-weight: bold; color: var(--purple); margin-top: 10px;">Legacy Insight</p>
+                    <p>Referencing the best-selling branding guide.</p>
+                    <div class="pub-links">
+                        <a href="https://www.amazon.com/s?k=12+Simple+Strategies+to+Becoming+a+Global+Brand+Moses+Olanrewaju+Bolarin" target="_blank">Amazon</a>
+                        <a href="https://www.lulu.com/spotlight/lanbomoe" target="_blank">Lulu</a>
+                        <a href="https://paystack.shop/majestic-world-of-business-publishing" target="_blank">Paystack</a>
+                        <a href="https://app.budpay.com/pay/LanBoMoeOnlineStore" target="_blank">BudPay</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="https://lanbomoe.github.io/#shop" class="btn btn-primary" target="_blank">Shop More Titles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq section-pad bg-dark" id="faq">
+        <div class="container">
+            <h2 class="section-title text-center" style="display: block;">Frequently Asked Questions</h2>
+            
+            <div class="faq-list mt-5">
+                <details class="faq-item">
+                    <summary>What is LanBo-Moe?</summary>
+                    <div class="faq-content">
+                        <strong>LanBo-Moe is a purpose-driven global brand founded by Moses Olanrewaju Bolarin that transforms lives through faith, creativity, innovation, and digital empowerment.</strong>
+                        <p>LanBo-Moe serves as an ecosystem connecting multimedia education, AI training, publishing, creative services, and mentorship. Through its sub-brands — 3niti Multimedia Academy (3MA), Majestic World of Business (MWB), Majestic Multimedia Academy (MMA), and others — LanBo-Moe equips individuals, students, entrepreneurs, and organizations with future-ready skills for a rapidly changing world.</p>
+                    </div>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Who is Moses Olanrewaju Bolarin?</summary>
+                    <div class="faq-content">
+                        <strong>Moses Olanrewaju Bolarin (LanBo-Moe) is a digital transformation strategist, bestselling author of over 15 books, worship leader with 100+ songs, and founder of the LanBo-Moe ecosystem.</strong>
+                        <p>With a Computer Science degree from the University of Lagos and a Post Graduate Diploma in Public Relations, Moses has over 27 years of experience in brand, IT, multimedia, and global strategy. He was ranked in the top 6% of Nigerian executives in 2015 and received the prestigious "Award of Excellence". Saved in 1986 while in high school, he has dedicated his life to ministry and entrepreneurship.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What is 3niti Multimedia Academy (3MA)?</summary>
+                    <div class="faq-content">
+                        <strong>3niti Multimedia Academy (3MA) is the flagship educational arm of LanBo-Moe, empowering kids and teens ages 4-19 with digital creativity and Kingdom values.</strong>
+                        <p>3MA offers hands-on courses in multimedia production, coding, AI, game design, robotics, virtual/augmented reality, and more. Programs are delivered online via Google Classroom and Zoom, and onsite at locations in Lagos and Ogun State, Nigeria. Students become "published authors" and skilled creators through the academy's unique project-based approach.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What is Summer Multimedia Training (SMT)?</summary>
+                    <div class="faq-content">
+                        <strong>SMT is an intensive annual summer program running from August 3-28, 2026, offering hands-on training in AI, coding, game design, robotics, and multimedia production.</strong>
+                        <p>SMT 2026 features modules MP1-MP7 covering text, images, audio, video, animations, presentations, and mobile content. The program is offered both online (via Google Classroom and Zoom) and onsite at Ikeja HQ. Students gain practical, future-ready skills through project-based learning and receive certificates upon completion.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What is Majestic World of Business (MWB)?</summary>
+                    <div class="faq-content">
+                        <strong>Majestic World of Business (MWB) is the parent creative enterprise behind LanBo-Moe's publishing, production, and consulting efforts.</strong>
+                        <p>MWB encompasses MWB Publishing (book publishing and author services), MWB Productions (music and video spanning global standards), and Global Strategy &amp; Consulting (brand development, IT solutions, digital transformation, and global marketing).</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What is Mobile University?</summary>
+                    <div class="faq-content">
+                        <strong>Mobile University is LanBo-Moe's unified platform for all educational and training programs.</strong>
+                        <p>Mobile University brings together 3MA (kids and teens), MMA (adults 19+), AVIS AI Video Training, SMT, CBT, and all other training offerings under one mobile-first, accessible platform. Students can access courses, take assessments, and earn certifications from anywhere.</p>
+                    </div>
+                </details>
+
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3xX1rmUdxj9hTG1g4V9QECKqS6fj__8DnZuF1YT2O0tU92vEMIccgpOR2qZVFabymUzIlL8sh3" class="btn btn-outline" target="_blank">Contact for More Information</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REVIEWS ===== -->
+    <section class="reviews section-pad bg-gradient" id="reviews">
+        <div class="container">
+            <h2 class="section-title text-center" style="display: block;">Voices of Impact</h2>
+            <div class="review-grid mt-5">
+                
+                <div class="review-card compact-review">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <div class="quote-recognition">Professional Recognition</div>
+                    <p class="quote-text">“Thank you for your invaluable contribution to the UniversityDUEL 2026 season. Your insight, professionalism, and commitment played a key role in shaping the quality and impact of this year's competition. Your expertise and dedication helped create a meaningful experience for participants.”</p>
+                    <div class="quote-author">- UniversityDUEL Team</div>
+                    <div class="quote-role">The Stem Africa</div>
+                </div>
+                
+                <div class="review-card compact-review">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <div class="quote-recognition">Industry Credibility</div>
+                    <p class="quote-text">“Moses is a highly personable and astute developer of innovative frontiers in the media industry — a pacesetter. Always ahead of the curve and breaking new grounds. He leads by having done, builds great relationships, and challenges clients and partners by showing the way.”</p>
+                    <div class="quote-author">- Bayo Falode</div>
+                    <div class="quote-role">Senior Project Consultant, Director Ark Project Partners Ltd, PMO Global Awards Judging Committee Member</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <div class="quote-recognition">Parent Testimonial</div>
+                    <p class="quote-text">“Dear Mr. Moses, thank you for guiding, inspiring, and shaping minds. Your dedication and passion make a lasting impact. We are grateful for your love, support, and commitment to helping young people grow.”</p>
+                    <div class="quote-author">- The Agbabiaka Family</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <div class="quote-recognition">Thought Leadership</div>
+                    <p class="quote-text">“Pastor Lanre Bolarin has done a good job by bringing Kingdom mysteries to our consciousness and presenting them in such a simple manner that all may read, understand, and apply them to their personal lives. I highly recommend this book as a must-read.”</p>
+                    <div class="quote-author">- Apostle Tony Olukoyede</div>
+                    <div class="quote-role">Mentor &amp; Spiritual Leader</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="https://i.imgur.com/Fsp0AMe.png" alt="LanBo-Moe Logo" class="footer-logo" />
+                    <p>Transforming Lives Through Faith, Creativity &amp; Innovation.</p>
+                    <div class="mt-4">
+                        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3xX1rmUdxj9hTG1g4V9QECKqS6fj__8DnZuF1YT2O0tU92vEMIccgpOR2qZVFabymUzIlL8sh3" class="btn btn-outline" style="padding: 10px 24px; font-size: 0.9rem;" target="_blank">Book an Appointment</a>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> <span>Nigeria (Serving clients globally)<br>Lagos, NG</span></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+2348033830101">+234 803 383 0101</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:mwb@lanbomoe.com">mwb@lanbomoe.com</a> | <a href="mailto:moses@lanbomoe.com">moses@lanbomoe.com</a> | <a href="mailto:info@lanbomoe.com">info@lanbomoe.com</a></p>
+                    
+                    <div style="margin-top: 1.5rem;">
+                        <ul style="list-style: none; padding-left: 0; margin: 0; color: rgba(253,246,227,0.7); font-size: 0.9rem; line-height: 1.8;">
+                            <li style="margin-top: 10px; border-top: 1px solid rgba(166,128,36,0.2); padding-top: 10px;">
+                                Legacy Site: <a href="https://lanbomoe.github.io/" target="_blank" style="color: var(--gold);">lanbomoe.github.io</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect Globally</h4>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/channel/ANewYouWithMoses" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/anewyouwithmoses" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/olanrewaju.bolarin" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/moses-olanrewaju-bolarin-00990026" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.x.com/lanrebolarin" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.tiktok.com/anewyouwithmoses" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.pinterest.com/KXSJdJMmg" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p style="color: rgba(253,246,227,0.7); margin-bottom: 1.5rem;">Stay updated with LanBo-Moe news.</p>
+                    <form class="newsletter-form" action="https://www.lanbomoe.com/#contact" target="_blank">
+                        <input type="email" placeholder="Your Email Address" required style="width: 100%; box-sizing: border-box; padding: 12px 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(166,128,36,0.3); color: var(--white); font-family: var(--font-p); margin-bottom: 10px; outline: none;" />
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© LanBo-Moe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT (embedded) ===== -->
+    <script>
+        // Smooth scroll for internal links (fragment anchors)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href && href.length > 1) {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
