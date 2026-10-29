@@ -1,0 +1,9 @@
+# LanBo-Moe Digital Operating System (L-DOS v3.1) - Edge Crawler & AI Agent Policy
+User-agent: *
+Allow: /
+
+# XML Sitemap Location
+Sitemap: https://www.lanbomoe.com/sitemap.xml
+
+# LLM Machine-Readable Knowledge Catalog
+Link: https://www.lanbomoe.com/llms.txt
