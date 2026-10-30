@@ -1,9 +1,85 @@
-# LanBo-Moe Digital Operating System (L-DOS v3.1) - Edge Crawler & AI Agent Policy
+# Robots.txt for https://www.lanbomoe.com/
+# L-DOS v3.1 Comprehensive AI Search, Conversational Engine & Crawler Governance
+
 User-agent: *
 Allow: /
 
-# XML Sitemap Location
-Sitemap: https://www.lanbomoe.com/sitemap.xml
+# ===== 1. Primary AI Conversational Search Engines (AEO Enabled) =====
 
-# LLM Machine-Readable Knowledge Catalog
-Link: https://www.lanbomoe.com/llms.txt
+# Google Gemini, Google Search AI Overviews & Vertex
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI ChatGPT, SearchGPT & OAI Agents
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic Claude & Claude Search
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI Search Engine
+User-agent: PerplexityBot
+Allow: /
+
+# xAI Grok (Twitter / X AI Search)
+User-agent: Grok
+Allow: /
+User-agent: xAI-Bot
+Allow: /
+
+# DeepSeek AI Crawler & Search Engine
+User-agent: DeepSeekBot
+Allow: /
+User-agent: DeepSeek-AI
+Allow: /
+
+# Microsoft Copilot, Bing AI & Windows Intelligence
+User-agent: Bingbot
+Allow: /
+User-agent: Copilot
+Allow: /
+
+# Apple Intelligence & Siri Knowledge Graph
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Brave Leo AI & Brave Search Engine
+User-agent: BraveBot
+Allow: /
+
+# Meta AI (Llama, Facebook, Instagram AI Knowledge)
+User-agent: FacebookBot
+Allow: /
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Amazon Bedrock & Amazon Q
+User-agent: Amazonbot
+Allow: /
+
+# [suspicious link removed] AI Search
+User-agent: YouBot
+Allow: /
+
+# DuckDuckGo AI Assist
+User-agent: DuckAssistBot
+Allow: /
+
+# ===== 2. Canonical Knowledge Catalog & Sitemap Endpoints =====
+Sitemap: [suspicious link removed]
+llms-txt: [suspicious link removed]
